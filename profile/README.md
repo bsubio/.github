@@ -1,6 +1,6 @@
-# bsub
+# bsub - Zero‑setup batch execution for command-line tools.
 
-Zero‑setup batch execution for command-line tools — run, schedule, and
+bsub.io allows you to run, schedule, and
 observe groups of CLI commands with minimal friction.
 
 Why bsub
