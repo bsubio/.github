@@ -1,60 +1,38 @@
-# bsub - Zero‑setup batch execution for command-line tools.
+# bsub.io: zero‑setup batch execution for command-line tools
 
-bsub.io allows you to run, schedule, and
-observe groups of CLI commands with minimal friction.
+Cloud batch processing service for data transformations and document processing.
 
-Why bsub
--------
+## What is bsub.io
 
-- **Zero setup:** get started without heavy configuration or services.
-- **Batch & parallel:** run lists of commands in sequence or in parallel.
-- **Portable:** works on macOS, Linux, WSL, and containers.
-- **Observable:** realtime logs and concise summaries for each job.
+bsub.io provides serverless batch processing for common file operations through a simple command-line interface. No setup, no infrastructure management—just submit files and retrieve results.
 
-Quick start
------------
+## Services
 
-1. Download the binary for your platform from the releases page on
-	https://bsub.io (or use your package manager if available).
-2. Run a single command:
+- **PDF extraction** — Extract text from PDFs with or without OCR
+- **Audio transcription** — Convert audio files to text
+- **Video conversion** — Convert videos to MP4 format
+- **Document compilation** — Markdown and Typst to PDF conversion
+- **Batch processing** — Submit multiple files for parallel processing
 
-```
-bsub run "echo hello from bsub"
-```
+## Quick Start
 
-3. Run multiple commands as a batch (example):
-
-```
-bsub run "echo step-1" "sleep 1" "echo step-3"
+```bash
+curl -fsSL https://install.bsub.io/ | sh
+bsubio register
+bsubio submit pdf/extract document.pdf
 ```
 
-Core concepts
--------------
+## Resources
 
-- `run` — execute one or more commands as a batch job.
-- `parallel` — control concurrency for independent tasks.
-- `dry-run` —g
+- **Website:** https://bsub.io
+- **Documentation:** https://docs.bsub.io
+- **CLI Repository:** https://github.com/bsubio/cli
+- **Web App:** https://app.bsub.io
 
-Use cases
----------
+## Contributing
 
-- CI-friendly command batching for tests, linters, or build steps.
-- Local automation of repetitive CLI workflows.
-- Lightweight orchestration inside containers and ephemeral runners.
+Contributions welcome. Open issues or pull requests on the [CLI repository](https://github.com/bsubio/cli).
 
-Contributing
-------------
+## License
 
-Contributions, bug reports, and feature requests are welcome. Please open
-issues or pull requests on the upstream repository and follow the
-contribution guidelines.
-
-License
--------
-
-This project is open source — see the repository for license details.
-
-More
-----
-Visit https://bsub.io for docs, downloads, and examples.
-
+CLI is Open source. See repository for license details.
