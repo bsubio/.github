@@ -17,15 +17,15 @@ bsub.io provides serverless batch processing for common file operations through 
 ## 🏁 Quick Start
 
 ```bash
-curl -fsSL https://install.bsub.io/ | sh
+curl -fsSL https://bsub.io/install.sh | sh
 bsubio register
-bsubio submit pdf/extract document.pdf
+bsubio submit -w pdf/extract *.pdf
 ```
 
 ## 🔗 Resources
 
-- 🌐 **Website:** https://bsub.io
-- 📚 **Documentation:** https://docs.bsub.io
+- 🌐 **Website:** https://www.bsub.io
+- 📚 **Documentation:** [https://docs.bsub.io](https://app.bsub.io/static/docs/)
 - 💻 **CLI Repository:** https://github.com/bsubio/cli
 - 🖥️ **Web App:** https://app.bsub.io
 
